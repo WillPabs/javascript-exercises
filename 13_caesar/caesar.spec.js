@@ -1,6 +1,6 @@
 const caesar = require('./caesar')
 
-test('works with single letters', () => {
+test.skip('works with single letters', () => {
   expect(caesar('A', 1)).toBe('B');
 });
 test.skip('works with words', () => {
@@ -9,7 +9,7 @@ test.skip('works with words', () => {
 test.skip('works with phrases', () => {
   expect(caesar('Hello, World!', 5)).toBe('Mjqqt, Btwqi!');
 });
-test.skip('works with negative shift', () => {
+test('works with negative shift', () => {
   expect(caesar('Mjqqt, Btwqi!', -5)).toBe('Hello, World!');
 });
 test.skip('wraps', () => {
